@@ -13,7 +13,7 @@ const houseRobber = (arr) => {
         dp[i] = Math.max(dp[i - 2] + arr[i], dp[i - 1]);
     }
 
-    return dp
+    return Math.max(...dp)
 
 }
 
